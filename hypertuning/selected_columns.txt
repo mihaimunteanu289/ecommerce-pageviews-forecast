@@ -1,0 +1,9 @@
+add_to_wishlist
+count_reviews
+diff_days
+conversion_rate
+discount_percentage
+wishlist_to_pageviews_ratio
+add_to_wishlist_5d_rolling_avg
+add_to_cart_5d_rolling_avg
+orders_5d_rolling_avg
