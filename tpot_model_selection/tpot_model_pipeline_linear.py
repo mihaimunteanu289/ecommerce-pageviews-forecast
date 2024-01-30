@@ -1,10 +1,12 @@
 import numpy as np
 import pandas as pd
-from sklearn.linear_model import Lasso, LinearRegression
+from sklearn.linear_model import Ridge
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import make_pipeline, make_union
 from tpot.builtins import StackingEstimator
 from tpot.export_utils import set_param_recursive
+from sklearn.preprocessing import FunctionTransformer
+from copy import copy
 
 # NOTE: Make sure that the outcome column is labeled 'target' in the data file
 tpot_data = pd.read_csv('PATH/TO/DATA/FILE', sep='COLUMN_SEPARATOR', dtype=np.float64)
@@ -12,10 +14,19 @@ features = tpot_data.drop('target', axis=1)
 training_features, testing_features, training_target, testing_target = \
             train_test_split(features, tpot_data['target'], random_state=42)
 
-# Average CV score on the training set was: -187411.76535671385
+# Average CV score on the training set was: -101577.29252692935
 exported_pipeline = make_pipeline(
-    StackingEstimator(estimator=Lasso(alpha=0.1)),
-    LinearRegression()
+    make_union(
+        make_union(
+            make_union(
+                FunctionTransformer(copy),
+                FunctionTransformer(copy)
+            ),
+            FunctionTransformer(copy)
+        ),
+        FunctionTransformer(copy)
+    ),
+    Ridge(alpha=1.0)
 )
 # Fix random state for all the steps in exported pipeline
 set_param_recursive(exported_pipeline.steps, 'random_state', 42)

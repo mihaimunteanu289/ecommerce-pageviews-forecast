@@ -1,8 +1,5 @@
 add_to_wishlist
-add_to_cart
-base_price_with_vat
 count_reviews
-promo_price_with_vat
 diff_days
 conversion_rate
 discount_percentage
