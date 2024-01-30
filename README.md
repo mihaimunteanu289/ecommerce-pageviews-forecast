@@ -15,7 +15,8 @@
 <li><code>1. eda.ipynb</code>: This notebook includes the exploratory data analysis of the e-commerce offers dataset.</li>
 <li><code>2. data_preprocessing.ipynb</code>: In this notebook, the raw data is cleaned and preprocessed for modeling.</li>
 <li><code>3. feature_engineering.ipynb</code>: This notebook covers the creation and selection of features that will be used in the prediction model.</li>
-<li><code>4. model_selection.ipynb</code>: This notebook explores various predictive models to forecast pageviews.</li>
+<li><code>4.1. model_selection_ensembles.ipynb</code>: This notebook explores various predictive ensemble models to forecast pageviews.</li>
+<li><code>4.2. model_selection_linears.ipynb</code>: This notebook explores various predictive linear models to forecast pageviews.</li>
 <li><code>5. model_tuning.ipynb</code>: This notebook is dedicated to the tuning of the chosen model(s) to improve forecast accuracy.</li>
 <li><code>tpot_model_selection</code>: A directory containing optimization scripts or results for model selection.</li>
 <li><code>hypertuning</code>: A directory dedicated to the hyperparameter tuning process of the predictive models.</li>
