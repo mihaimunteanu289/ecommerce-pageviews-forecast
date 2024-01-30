@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import Lasso, LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import make_pipeline, make_union
 from tpot.builtins import StackingEstimator
@@ -12,9 +12,9 @@ features = tpot_data.drop('target', axis=1)
 training_features, testing_features, training_target, testing_target = \
             train_test_split(features, tpot_data['target'], random_state=42)
 
-# Average CV score on the training set was: -187412.1138934574
+# Average CV score on the training set was: -187411.76535671385
 exported_pipeline = make_pipeline(
-    StackingEstimator(estimator=LinearRegression()),
+    StackingEstimator(estimator=Lasso(alpha=0.1)),
     LinearRegression()
 )
 # Fix random state for all the steps in exported pipeline

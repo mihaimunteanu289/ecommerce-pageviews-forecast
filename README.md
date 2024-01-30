@@ -4,7 +4,7 @@
 
 <h2>Project Overview</h2>
 
-<p>The goal of this project is to forecast the number of daily pageviews for each offer on an e-commerce site using historical data. The project follows a series of analytical and predictive modeling steps, concluding with a method proposal for ranking offers to maximize order totals.</p>
+<p>The goal of this project is to forecast the number of daily pageviews for each offer on an e-commerce site using historical data. The project follows a series of analytical and predictive modeling steps.</p>
 
 <h2>Repository Structure</h2>
 
@@ -12,7 +12,6 @@
 
 <ol>
 <li><code>data</code>: Contains the dataset used for training and evaluation.</li>
-<li><code>docs</code>: Documentation related to the project.</li>
 <li><code>1. eda.ipynb</code>: This notebook includes the exploratory data analysis of the e-commerce offers dataset.</li>
 <li><code>2. data_preprocessing.ipynb</code>: In this notebook, the raw data is cleaned and preprocessed for modeling.</li>
 <li><code>3. feature_engineering.ipynb</code>: This notebook covers the creation and selection of features that will be used in the prediction model.</li>

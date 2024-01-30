@@ -1,9 +1,14 @@
 add_to_wishlist
+add_to_cart
+base_price_with_vat
 count_reviews
+promo_price_with_vat
 diff_days
 conversion_rate
 discount_percentage
 wishlist_to_pageviews_ratio
+cart_to_wishlist_ratio
 add_to_wishlist_5d_rolling_avg
 add_to_cart_5d_rolling_avg
 orders_5d_rolling_avg
+add_to_wishlist_1d_lag
