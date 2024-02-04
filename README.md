@@ -18,6 +18,7 @@
 <li><code>4.1. model_selection_ensembles.ipynb</code>: This notebook explores various predictive ensemble models to forecast pageviews.</li>
 <li><code>4.2. model_selection_linears.ipynb</code>: This notebook explores various predictive linear models to forecast pageviews.</li>
 <li><code>5. model_tuning.ipynb</code>: This notebook is dedicated to the tuning of the chosen model(s) to improve forecast accuracy.</li>
+<li><code>6. ltr_listwise_poc.ipynb</code>: This notebook focuses on a proof of concept for listwise learning to rank (LTR) using LightGBM.</li>
 <li><code>tpot_model_selection</code>: A directory containing optimization scripts or results for model selection.</li>
 <li><code>hypertuning</code>: A directory dedicated to the hyperparameter tuning process of the predictive models.</li>
 <li><code>requirements.txt</code>: A file listing all the dependencies necessary to run the project.</li>
